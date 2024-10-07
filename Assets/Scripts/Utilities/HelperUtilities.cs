@@ -76,7 +76,7 @@ public static class HelperUtilities
     }
 
 
-    public static bool ValidateCheckEnumerableValues(RoomNodeTypeListSO thisObject, string fieldName, List<RoomNodeTypeSO> enumerableObjectToCheck)
+    public static bool ValidateCheckEnumerableValues(Object thisObject, string fieldName, IEnumerable enumerableObjectToCheck)
     {
         bool error = false;
         int count = 0;

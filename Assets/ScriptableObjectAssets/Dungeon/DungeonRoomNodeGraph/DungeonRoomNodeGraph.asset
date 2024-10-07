@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9004429166579917545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d80d6dc49e5644e38055cf3e771cbbb, type: 3}
+  m_Name: RoomNode
+  m_EditorClassIdentifier: 
+  id: 2ea6004a-1462-4bd5-bb9e-1cfc4590ef46
+  parentRoomNodeIDList: []
+  childRoomNodeIDList: []
+  roomNodeGraph: {fileID: 11400000}
+  roomNodeType: {fileID: 11400000, guid: 590f9d1f580f54089ba0d33fb5b4d532, type: 2}
+  roomNodeTypeList: {fileID: 11400000, guid: 5c7d4a56cb4844c73a768b0ec919bedf, type: 2}
+  rect:
+    serializedVersion: 2
+    x: 554
+    y: 132
+    width: 160
+    height: 75
+  isLeftClickDragging: 0
+  isSelected: 1
+--- !u!114 &-7925430377578035337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d80d6dc49e5644e38055cf3e771cbbb, type: 3}
+  m_Name: RoomNode
+  m_EditorClassIdentifier: 
+  id: 1fc52c09-bf9e-4187-9a81-1121f60a0607
+  parentRoomNodeIDList:
+  - e1592af9-8fa2-445f-810a-a16ebe63f04b
+  childRoomNodeIDList: []
+  roomNodeGraph: {fileID: 11400000}
+  roomNodeType: {fileID: 11400000, guid: 261d2d479f2504fd6a7623b819ef0195, type: 2}
+  roomNodeTypeList: {fileID: 11400000, guid: 5c7d4a56cb4844c73a768b0ec919bedf, type: 2}
+  rect:
+    serializedVersion: 2
+    x: 589
+    y: 262
+    width: 160
+    height: 75
+  isLeftClickDragging: 0
+  isSelected: 0
+--- !u!114 &-6632440273414921712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d80d6dc49e5644e38055cf3e771cbbb, type: 3}
+  m_Name: RoomNode
+  m_EditorClassIdentifier: 
+  id: e1592af9-8fa2-445f-810a-a16ebe63f04b
+  parentRoomNodeIDList:
+  - 674e1e99-0725-43ad-a3c4-fd4e599b8cb4
+  childRoomNodeIDList:
+  - 1fc52c09-bf9e-4187-9a81-1121f60a0607
+  roomNodeGraph: {fileID: 11400000}
+  roomNodeType: {fileID: 11400000, guid: 67e78aeed94b34eeabf8d341166bbc38, type: 2}
+  roomNodeTypeList: {fileID: 11400000, guid: 5c7d4a56cb4844c73a768b0ec919bedf, type: 2}
+  rect:
+    serializedVersion: 2
+    x: 335
+    y: 153
+    width: 160
+    height: 75
+  isLeftClickDragging: 0
+  isSelected: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8276db89c316547c1a3b3b96d240110b, type: 3}
+  m_Name: DungeonRoomNodeGraph
+  m_EditorClassIdentifier: 
+  roomNodeTypeList: {fileID: 0}
+  roomNodeList:
+  - {fileID: 194991683355406505}
+  - {fileID: -6632440273414921712}
+  - {fileID: -9004429166579917545}
+  - {fileID: -7925430377578035337}
+  roomNodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &194991683355406505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d80d6dc49e5644e38055cf3e771cbbb, type: 3}
+  m_Name: RoomNode
+  m_EditorClassIdentifier: 
+  id: 674e1e99-0725-43ad-a3c4-fd4e599b8cb4
+  parentRoomNodeIDList: []
+  childRoomNodeIDList:
+  - e1592af9-8fa2-445f-810a-a16ebe63f04b
+  roomNodeGraph: {fileID: 11400000}
+  roomNodeType: {fileID: 11400000, guid: 9991d0f844e4c4b58a5f955dfc973dc2, type: 2}
+  roomNodeTypeList: {fileID: 11400000, guid: 5c7d4a56cb4844c73a768b0ec919bedf, type: 2}
+  rect:
+    serializedVersion: 2
+    x: 118
+    y: 72
+    width: 160
+    height: 75
+  isLeftClickDragging: 0
+  isSelected: 0

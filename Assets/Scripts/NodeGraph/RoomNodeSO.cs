@@ -22,9 +22,9 @@ public class RoomNodeSO : ScriptableObject
     [HideInInspector] public bool isSelected = false;
 
     /// <summary>
-    /// Initialize node
+    /// Initialise node
     /// </summary>
-    public void Initialize(Rect rect, RoomNodeGraphSO nodeGraph, RoomNodeTypeSO roomNodeType)
+    public void Initialise(Rect rect, RoomNodeGraphSO nodeGraph, RoomNodeTypeSO roomNodeType)
     {
         this.rect = rect;
         this.id = Guid.NewGuid().ToString();
@@ -32,6 +32,8 @@ public class RoomNodeSO : ScriptableObject
         this.roomNodeGraph = nodeGraph;
         this.roomNodeType = roomNodeType;
 
+        // Load room node type list
+        roomNodeTypeList = GameResources.Instance.roomNodeTypeList;
     }
 
     /// <summary>
@@ -291,6 +293,10 @@ public class RoomNodeSO : ScriptableObject
 
         // If child is not a corridor and this node is not a corridor return false
         if (!roomNodeGraph.GetRoomNode(childID).roomNodeType.isCorridor && !roomNodeType.isCorridor)
+            return false;
+
+        // If adding a corridor check that this node has < the maximum permitted child corridors
+        if (roomNodeGraph.GetRoomNode(childID).roomNodeType.isCorridor && childRoomNodeIDList.Count >= Settings.maxChildCorridors)
             return false;
 
         // if the child room is an entrance return false - the entrance must always be the top level parent node

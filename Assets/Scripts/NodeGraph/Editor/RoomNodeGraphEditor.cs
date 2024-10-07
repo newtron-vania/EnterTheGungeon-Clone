@@ -285,8 +285,7 @@ public class RoomNodeGraphEditor : EditorWindow
         currentRoomNodeGraph.roomNodeList.Add(roomNode);
 
         // set room node values
-        roomNode.Initialize(new Rect(mousePosition, new Vector2(nodeWidth, nodeHeight)), currentRoomNodeGraph, roomNodeType);
-        
+        roomNode.Initialise(new Rect(mousePosition, new Vector2(nodeWidth, nodeHeight)), currentRoomNodeGraph, roomNodeType);
 
         // add room node to room node graph scriptable object asset database
         AssetDatabase.AddObjectToAsset(roomNode, currentRoomNodeGraph);

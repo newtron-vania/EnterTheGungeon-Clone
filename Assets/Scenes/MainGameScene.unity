@@ -171,10 +171,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.27180526
-    width: 1.0008327
-    height: 0.4571501
+    x: 1.8232727
+    y: 0
+    width: 0.07757575
+    height: 0.07989347
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -512,7 +512,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1a8cfb7a1001b2b4bb28df71ea197614, type: 2}
   - {fileID: 11400000, guid: db97eef24629a514999b7535e9a88f4f, type: 2}
   - {fileID: 11400000, guid: 2a55dcbad3bc6f342a3564b4e9622784, type: 2}
-  currentDungeonLevelListIndex: 3
+  currentDungeonLevelListIndex: 0
   gameState: 0
   previousGameState: 0
 --- !u!4 &1045370654

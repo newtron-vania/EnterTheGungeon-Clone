@@ -90,15 +90,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8276db89c316547c1a3b3b96d240110b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fd193ca0c9070747b633840b9710fda, type: 3}
   m_Name: DungeonRoomNodeGraph
   m_EditorClassIdentifier: 
   roomNodeTypeList: {fileID: 0}
-  roomNodeList:
-  - {fileID: 194991683355406505}
-  - {fileID: -6632440273414921712}
-  - {fileID: -9004429166579917545}
-  - {fileID: -7925430377578035337}
+  roomNodeList: []
   roomNodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &194991683355406505
